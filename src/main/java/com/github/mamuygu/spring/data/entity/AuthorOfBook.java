@@ -4,8 +4,8 @@ import lombok.Data;
 
 import javax.persistence.*;
 
-@Data
 @Entity
+@Data
 public class AuthorOfBook {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

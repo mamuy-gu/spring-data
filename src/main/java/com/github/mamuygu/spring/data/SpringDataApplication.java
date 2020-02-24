@@ -8,8 +8,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableJpaRepositories(basePackages = "com.github.mamuygu.spring.data")
 public class SpringDataApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SpringDataApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(SpringDataApplication.class, args);
+    }
 
 }
