@@ -3,6 +3,7 @@ package com.github.mamuygu.spring.data.service;
 import com.github.mamuygu.spring.data.SpringDataApplication;
 import com.github.mamuygu.spring.data.data.AuthorOfBookRepository;
 import com.github.mamuygu.spring.data.data.AuthorRepository;
+import com.github.mamuygu.spring.data.data.BookRepository;
 import com.github.mamuygu.spring.data.entity.Author;
 import com.github.mamuygu.spring.data.entity.AuthorOfBook;
 import com.github.mamuygu.spring.data.entity.Book;
@@ -20,7 +21,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class BookServiceImplTest {
 
     @Autowired
-    //private BookRepository bookRepository;
+    private BookRepository bookRepository;
 
     @Autowired
     private AuthorRepository authorRepository;
@@ -58,6 +59,11 @@ public class BookServiceImplTest {
         author2.setFirstname("Жюль");
         author2.setLastname("Верн");
         authorRepository.save(author2);
+
+        AuthorOfBook authorOfBook2 = new AuthorOfBook();
+        authorOfBook.setAuthor(author2);
+        authorOfBook.setBook(book2);
+        authorOfBookRepository.save(authorOfBook);
     }
 
     @Test
