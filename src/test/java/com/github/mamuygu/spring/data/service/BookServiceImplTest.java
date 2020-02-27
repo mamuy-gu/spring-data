@@ -63,11 +63,12 @@ public class BookServiceImplTest {
         AuthorOfBook authorOfBook2 = new AuthorOfBook();
         authorOfBook.setAuthor(author2);
         authorOfBook.setBook(book2);
-        authorOfBookRepository.save(authorOfBook);
+        authorOfBookRepository.save(authorOfBook2);
     }
 
     @Test
     public void testSave() {
+
     }
 
     @Test
