@@ -1,7 +1,7 @@
-package com.github.mamuygu.spring.data.service;
+package pro.sisit.unit9.service;
 
-import com.github.mamuygu.spring.data.data.BookRepository;
-import com.github.mamuygu.spring.data.entity.Book;
+import pro.sisit.unit9.data.BookRepository;
+import pro.sisit.unit9.entity.Book;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;

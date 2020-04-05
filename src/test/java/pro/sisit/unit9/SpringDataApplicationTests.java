@@ -1,4 +1,4 @@
-package com.github.mamuygu.spring.data;
+package pro.sisit.unit9;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

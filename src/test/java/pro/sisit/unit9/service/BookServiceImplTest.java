@@ -1,13 +1,13 @@
-package com.github.mamuygu.spring.data.service;
+package pro.sisit.unit9.service;
 
-import com.github.mamuygu.spring.data.SpringDataApplication;
-import com.github.mamuygu.spring.data.data.AuthorOfBookRepository;
-import com.github.mamuygu.spring.data.data.AuthorRepository;
-import com.github.mamuygu.spring.data.data.BookRepository;
-import com.github.mamuygu.spring.data.data.BookSpecifications;
-import com.github.mamuygu.spring.data.entity.Author;
-import com.github.mamuygu.spring.data.entity.AuthorOfBook;
-import com.github.mamuygu.spring.data.entity.Book;
+import pro.sisit.unit9.SpringDataApplication;
+import pro.sisit.unit9.data.AuthorOfBookRepository;
+import pro.sisit.unit9.data.AuthorRepository;
+import pro.sisit.unit9.data.BookRepository;
+import pro.sisit.unit9.data.BookSpecifications;
+import pro.sisit.unit9.entity.Author;
+import pro.sisit.unit9.entity.AuthorOfBook;
+import pro.sisit.unit9.entity.Book;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

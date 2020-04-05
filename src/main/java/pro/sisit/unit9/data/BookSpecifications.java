@@ -1,6 +1,6 @@
-package com.github.mamuygu.spring.data.data;
+package pro.sisit.unit9.data;
 
-import com.github.mamuygu.spring.data.entity.Book;
+import pro.sisit.unit9.entity.Book;
 import org.springframework.data.jpa.domain.Specification;
 
 public class BookSpecifications {
