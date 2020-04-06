@@ -1,7 +1,7 @@
-package com.github.mamuygu.spring.data.data;
+package pro.sisit.unit9.data;
 
-import com.github.mamuygu.spring.data.entity.Book;
 import org.springframework.jdbc.core.JdbcTemplate;
+import pro.sisit.unit9.entity.Book;
 
 import java.util.List;
 

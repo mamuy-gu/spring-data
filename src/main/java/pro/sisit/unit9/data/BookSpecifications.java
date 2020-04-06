@@ -1,15 +1,15 @@
-package com.github.mamuygu.spring.data.data;
+package pro.sisit.unit9.data;
 
-import com.github.mamuygu.spring.data.entity.Book;
 import org.springframework.data.jpa.domain.Specification;
+import pro.sisit.unit9.entity.Book;
 
 public class BookSpecifications {
     public static Specification<Book> yearLessThan(int year) {
-        return (root, query, criteriaBuilder) -> criteriaBuilder.lessThanOrEqualTo(root.get("year"), year);
+        return (root, query, cb) -> cb.lessThanOrEqualTo(root.get("year"), year);
     }
 
     public static Specification<Book> yearGreaterThan(int year) {
-        return (root, query, criteriaBuilder) -> criteriaBuilder.greaterThanOrEqualTo(root.get("year"), year);
+        return (root, query, cb) -> cb.greaterThanOrEqualTo(root.get("year"), year);
     }
 
     public static Specification<Book> byYearRange(int startYear, int finishYear) {

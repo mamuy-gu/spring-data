@@ -1,4 +1,4 @@
-package com.github.mamuygu.spring.data.entity;
+package pro.sisit.unit9.entity;
 
 import lombok.Data;
 
