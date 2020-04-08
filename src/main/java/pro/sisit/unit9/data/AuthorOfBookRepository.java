@@ -1,7 +1,7 @@
-package com.github.mamuygu.spring.data.data;
+package pro.sisit.unit9.data;
 
-import com.github.mamuygu.spring.data.entity.AuthorOfBook;
 import org.springframework.data.repository.CrudRepository;
+import pro.sisit.unit9.entity.AuthorOfBook;
 
 public interface AuthorOfBookRepository extends CrudRepository<AuthorOfBook, Long> {
 }

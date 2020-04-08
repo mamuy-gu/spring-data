@@ -1,17 +1,14 @@
-package com.github.mamuygu.spring.data.data;
+package pro.sisit.unit9.data;
 
-import com.github.mamuygu.spring.data.entity.Book;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.stereotype.Repository;
+import pro.sisit.unit9.entity.Book;
 
 import java.util.List;
 
-@Repository
 public class BookComplexQueryRepositoryImpl implements BookComplexQueryRepository {
-
     private JdbcTemplate jdbcTemplate;
 
-    public BookComplexQueryRepositoryImpl(JdbcTemplate jdbcTemplate) {
+    BookComplexQueryRepositoryImpl(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
 
@@ -20,9 +17,9 @@ public class BookComplexQueryRepositoryImpl implements BookComplexQueryRepositor
         return jdbcTemplate.query("select id, title, description, year from book",
                 (rs, rowNum) -> Book.builder()
                         .id(rs.getLong("id"))
+                        .year(rs.getInt("year"))
                         .title(rs.getString("title"))
                         .description(rs.getString("description"))
-                        .year(rs.getInt("year"))
                         .build());
     }
 }
